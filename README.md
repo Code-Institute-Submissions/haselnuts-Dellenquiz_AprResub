@@ -62,17 +62,19 @@ The page features a **hero image** with view of one of the Dellen lakes, a descr
 
 ## Technoligies used
 - This project uses HTML and CSS programming languages.
+- **Google Fonts**
+  - This project uses **[Google Fonts](https://fonts.google.com/)** to style the website fonts.
+- **TinyPNG**
+  - This project uses **[TinyPNG](https://tinypng.com/)** to reduce the size of the images used on this website.
+
+
 - **BootstrapCDN**
   - This project uses **Bootstrap 4.2.1** to simplify the structure and the overall responsive design of the website.
   - This project uses **Boootstrap JS** for the responsive navbar.
   - This project uses **Bootstrap CDN** for **FontAwsome** icons.
-- **Google Fonts**
-  - This project uses **[Google Fonts](https://fonts.google.com/)** to style the website fonts.
 - **Pinetools**
   - This project uses **[Pintools](https://pinetools.com/image-color-picker)** an Online Image Color Picker to look for colour 
   which match the theme of the PowerPoint presentation provided by Jenny Gustafsson.
-- **TinyPNG**
-  - This project uses **[TinyPNG](https://tinypng.com/)** to reduce the size of the images used on this website.
 - **CompressJPEG**
   - This project uses **[CompressJPEG](https://compressjpeg.com/)** to reduce the size of the images used on this website.
 
