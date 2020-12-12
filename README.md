@@ -24,6 +24,7 @@ Introduction Whats about
 - Radio buttons to be added to seperate the levels of the questions like "Tourists" (easy), "Immigrates" (normal) and "Born here" (experts)
 - Radio buttons to choose how many question you want to answer
 - Dropdown list to choose between the different parts or villiges in the Dellendistrict
+- Questions to be in different lanuages like english, german, swedish
 
 ## UX
 #### The ideal guest for this business is:
@@ -57,6 +58,7 @@ The page features a **hero image** with view of one of the Dellen lakes, a descr
 ### Features to Implement in future
 **Radio buttons** - to seperate amount of questions and choose the levels
 **Dropdown list** - to choose between different parts and villages of the Dellendistrict
+**Flags** - for the different coutries - languages
 
 ## Technoligies used
 - This project uses HTML and CSS programming languages.
@@ -104,7 +106,6 @@ Answers of .....
 
 
 ### Acknowledgements
-README.md 
  - 
 
 To all at 
