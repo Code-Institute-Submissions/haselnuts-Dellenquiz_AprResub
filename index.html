@@ -6,14 +6,16 @@
         <title>Dellenquiz</title>
         <link rel="stylesheet" href="CSS/style.css" type="text/css">
     </head>
-</html>
+
  <body>
+<!--Hero Image and Title-->
      <header>
         <div>
             <p>hero-image</p>
             <h1>Dellenquiz</h1>
         </div>
      </header>
+<!--/Hero Image and Title-->
 
 <!--Quiz Rules-->
      <div>
@@ -28,9 +30,13 @@
              <p>background image</p>
              <div>
                  <h2>Question</h2>
-                 <div>
-                     function dellenquiz(){
-                         
+                 <div class="dellenquiz">
+                     function ask(question, true, false){
+                        if(count(question)) {
+                            true();
+                        } else {
+                            false();
+                        }
                      }
                  </div>
              </div>
@@ -53,3 +59,4 @@
 <!--/Footer-->
 
  </body>
+ </html>
