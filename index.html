@@ -4,59 +4,64 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Dellenquiz</title>
-        <link rel="stylesheet" href="CSS/style.css" type="text/css">
+        <link rel="stylesheet" href="assets/css/style.css" type="text/css">
     </head>
 
- <body>
-<!--Hero Image and Title-->
-     <header>
+    <body>
+    <!--Hero Image and Title-->
+        <header>
+            <div>
+                <p>hero-image</p>
+                <h1>Dellenquiz</h1>
+            </div>
+        </header>
+    <!--/Hero Image and Title-->
+
+    <!--Quiz Rules-->
         <div>
-            <p>hero-image</p>
-            <h1>Dellenquiz</h1>
+            <h2>How to play</h2>
+            <p>Rules</p>
         </div>
-     </header>
-<!--/Hero Image and Title-->
+    <!--/Quiz Rules-->
 
-<!--Quiz Rules-->
-     <div>
-         <h2>How to play</h2>
-         <p>Rules</p>
-     </div>
-<!--/Quiz Rules-->
+    <!--Quiz-->
+        <div>
+            <div>
+                <p>background image</p>
+                <div>
+                    <h2>Quiz</h2>
+                    <div class="dellenquiz">
+                        <p>Question here</p>
+                        <button class="answer">answer</button>
+                        <button class="answer">answer</button><br>
+                        <button class="answer">answer</button>
+                        <button class="answer" onclick="changeBackgroundColor()">answer</button>
+                        <!--<script>
+                            function changeBackgroundColor() {
+                                let color 
+                            }
+                        </script>-->
+                    </div>
+                    <div>
+                        <button class="submit" onclick="nextQuestion">Submit</button>                    
+                    </div>
+                </div>
+        
+            </div>
+        </div>
+    <!--/Quiz-->
 
-<!--Quiz-->
-     <div>
-         <div>
-             <p>background image</p>
-             <div>
-                 <h2>Question</h2>
-                 <div class="dellenquiz">
-                     function ask(question, true, false){
-                        if(count(question)) {
-                            true();
-                        } else {
-                            false();
-                        }
-                     }
-                 </div>
-             </div>
-    
-         </div>
-     </div>
-<!--/Quiz-->
+    <!--Disclaimer-->
+        <div>
+            <p>In case wrong wrong answer whom to contact</p>
+        </div>
+    <!--/Disclaimer-->
 
-<!--Disclaimer-->
-     <div>
-         <p>In case wrong wrong answer whom to contact</p>
-     </div>
-<!--/Disclaimer-->
-
-<!--Footer-->
-     <div>
-         <p>Contact information</p>
-     </div>
-
-<!--/Footer-->
-
- </body>
- </html>
+    <!--Footer-->
+        <div>
+            <p>Contact information</p>
+        </div>
+    <!--/Footer-->
+        <script src="assets/js/javascript.js"></script>
+    </body>
+</html>
