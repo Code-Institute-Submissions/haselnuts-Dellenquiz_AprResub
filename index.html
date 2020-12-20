@@ -10,8 +10,8 @@
     <body>
     <!--Hero Image and Title-->
         <header>
-            <div>
-                <p>hero-image</p>
+            <div
+                class="container-fluid hero-image">
                 <h1>Dellenquiz</h1>
             </div>
         </header>
@@ -32,23 +32,22 @@
                     <h2>Quiz</h2>
                     <div class="dellenquiz">
                         <p>Question here</p>
-                        <button class="answer">answer</button>
-                        <button class="answer">answer</button><br>
-                        <button class="answer">answer</button>
-                        <button class="answer" onclick="changeBackgroundColor()">answer</button>
-                        <!--<script>
-                            function changeBackgroundColor() {
-                                let color 
-                            }
-                        </script>-->
-                    </div>
-                    <div>
-                        <button class="submit" onclick="nextQuestion">Submit</button>                    
+                        <button class="answer" onclick="selected()">answer</button>
+                        <button class="answer" onclick="selected()">answer</button><br>
+                        <button class="answer" onclick="selected()">answer</button>
+                        <button class="answer" onclick="selected()">answer</button>
                     </div>
                 </div>
-        
+                <button class="submit" onclick="nextQuestion">Submit</button>                    
             </div>
         </div>
+
+        <!-- <script>
+            function selected() {
+               
+            }
+        </script>          -->
+
     <!--/Quiz-->
 
     <!--Disclaimer-->
@@ -62,6 +61,6 @@
             <p>Contact information</p>
         </div>
     <!--/Footer-->
-        <script src="assets/js/javascript.js"></script>
+        <script src="assets/js/script.js"></script>
     </body>
 </html>
