@@ -1,8 +1,8 @@
-<h1 text-align="center">
+<h1 align ="center">
     Dellenquiz
 </h1>
 
-<div text-align="center">
+<div align ="center">
 
 [View website in Github pages](https://github.com/haselnuts/Dellenquiz)
 </div>
@@ -108,12 +108,10 @@ Answers of .....
 
 
 ### Acknowledgements
- - 
-
-To all at 
- - Slack
- - W3schools.com
- - Stackflow
+ - Aaron Sinnot (Slack name: aaron_mentor) for giving me the JS structure for the questions
+ - Mitchell Hudson YouTube videos on how to built a quiz step by step
+   - [JS Quiz Getting Started Objects](https://www.youtube.com/watch?v=5gMeokwPtYM&t=122s)
+   - [JS Quiz ForEach](https://www.youtube.com/watch?v=7wHSwvM1Rr8)
 
 
 
