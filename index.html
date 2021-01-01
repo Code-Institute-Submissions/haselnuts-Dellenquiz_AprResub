@@ -36,51 +36,31 @@
            const questions = [
                  {
                      quest: "How was the Dellendistrict created?",
-                     answ: [
-                        {a: "Meteor", correct: true},
-                        {b: "Volcano", correct: false},
-                        {c: "Big Bang", correct: false},
-                        {d: "Earthquake", correct: false},                        
-                        ]                     
+                     answ: ["Meteor", "Volcano", "Big Bang", "Earthquake"                        
+                        ], 
+                        correct: 0                   
                 },
                 {
                      quest: "What is the stone called that only can be found in the Dellendistrict?",
-                     answ: [
-                        {a: "Dellenit", correct: true},
-                        {b: "Dellenkilt", correct: false},
-                        {c: "Dellenstone", correct: false},
-                        {d: "Dellenquartz", correct: false},
-                       ]
+                     answ: [ "Dellenit", "Dellenkilt", "Dellenstone", "Dellenquartz"
+                       ],
+                       correct: 0
                 },
                 {
                      quest: "When were the Dellenlakes formed?",
-                     answ: [
-                        {a: "Stone Age", correct: false},
-                        {b: "Bronce Age", correct: false},
-                        {c: "Ice Age", correct: true},
-                        {d: "Iron Age", correct: false},
+                     answ: ["Stone Age", "Bronce Age", "Ice Age", "Iron Age"
                         ],
+                        correct: 2
                 },
                 {
                      quest: "Which is the biggest place in the Dellendistrict?",
-                     answ: [
-                        {a: "Bjuråker", correct: false},
-                        {b: "Norrbo", correct: false},
-                        {c: "Delsbo", correct: true},
-                        {d: "Moviken", correct: false},
+                     answ: ["Bjuråker", "Norrbo", "Delsbo", "Moviken"
                         ],
+                        correct: 2
                 },
                 {
                      quest: "Which place is not lying at the Dellenlakes?",
-                     answ: [
-                        {a: "Delsbo", correct: false},
-                        {b: "Moviken", correct: false},
-                        {c: "Friggesund", correct: false},
-                        {d: "Eckelsbo", correct: true},
-                         
-                         
-                         
-                         
+                     answ: ["Delsbo", "Moviken", "Friggesund", "Eckelsbo",
                         ],
                         correct: 3
                 }
@@ -92,16 +72,19 @@
                 let quizBody = "";
 
                 questions.forEach( function(question) {
+                    let answerBody = "";
+                    question.answ.forEach(function(answer) {
+                        let button = document.createElement("button");
+                        button.innerhtml = ;
+                        answerBody += ${answer};                  
+                })
+
                     quizBody += `
-                    <p>${question.quest}</>
-                    <button>${question.answ}</button>
-                    <button>${question.b}</button>
-                    <button>${question.c}</button>
-                    <button>${question.d}</button>
+                    <div>${question.quest}</div>
+                    <div>${answerBody}</div>
                     `                    
                 }            
                 )
-
                 quizbody.innerHTML = quizBody
             }
 
