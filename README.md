@@ -112,6 +112,9 @@ Answers of .....
  - Mitchell Hudson YouTube videos on how to built a quiz step by step
    - [JS Quiz Getting Started Objects](https://www.youtube.com/watch?v=5gMeokwPtYM&t=122s)
    - [JS Quiz ForEach](https://www.youtube.com/watch?v=7wHSwvM1Rr8)
+ - CodePen
+   - [JavaScriptCreateButton](https://codepen.io/davidcochran/pen/WbWXoa)
+
 
 
 
