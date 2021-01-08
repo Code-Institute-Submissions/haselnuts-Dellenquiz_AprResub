@@ -26,77 +26,20 @@
 
     <!--Quiz-->
         <div class="quiz-background-img quiz-body">
-            <h2>Quiz</h2>
-            <div id=quiz class="quiz">
+            <h2>A Quiz for In- and Around the Dellendistrict</h2>
+            <div id=quiz>
                 <!--Questions go here-->
-            </div>                 
+            </div>  
+            <button id="next">Next Question</button>     
+            <button id="previous">Previous Question</button>
+            <button id="submit">Submit</button>
+            <div id="results"></div>
         </div>
-
-        <script>
-           const questions = [
-                 {
-                     quest: "How was the Dellendistrict created?",
-                     answ: ["Meteor", "Volcano", "Big Bang", "Earthquake"                        
-                        ], 
-                        correct: 0                   
-                },
-                {
-                     quest: "What is the stone called that only can be found in the Dellendistrict?",
-                     answ: [ "Dellenit", "Dellenkilt", "Dellenstone", "Dellenquartz"
-                       ],
-                       correct: 0
-                },
-                {
-                     quest: "When were the Dellenlakes formed?",
-                     answ: ["Stone Age", "Bronce Age", "Ice Age", "Iron Age"
-                        ],
-                        correct: 2
-                },
-                {
-                     quest: "Which is the biggest place in the Dellendistrict?",
-                     answ: ["Bjuråker", "Norrbo", "Delsbo", "Moviken"
-                        ],
-                        correct: 2
-                },
-                {
-                     quest: "Which place is not lying at the Dellenlakes?",
-                     answ: ["Delsbo", "Moviken", "Friggesund", "Eckelsbo",
-                        ],
-                        correct: 3
-                }
-            ]
-
-            function quiz() {
-                const quizbody = document.getElementById("quiz");
-
-                let quizBody = "";
-
-                questions.forEach( function(question) {
-                    let answerBody = "";
-                    question.answ.forEach(function(answer) {
-                        let button = document.createElement("button");
-                        button.innerhtml = ;
-                        answerBody += ${answer};                  
-                })
-
-                    quizBody += `
-                    <div>${question.quest}</div>
-                    <div>${answerBody}</div>
-                    `                    
-                }            
-                )
-                quizbody.innerHTML = quizBody
-            }
-
-            quiz()
-            
-        </script>
-
     <!--/Quiz-->
 
     <!--Disclaimer-->
         <div>
-            <p>In case wrong wrong answer whom to contact</p>
+            <p>In case wrong answer whom to contact</p>
         </div>
     <!--/Disclaimer-->
 
