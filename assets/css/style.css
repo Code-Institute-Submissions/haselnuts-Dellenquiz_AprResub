@@ -30,6 +30,7 @@ h2 {
     display: flex;
     justify-content: center;
     text-align: center;
+    
 }
 
 /*----------Images----------*/
@@ -53,17 +54,23 @@ h2 {
     height: 500px;
 }
 
-/*----------Margin----------*/
+/*----------Rules----------*/
 .howtoplay {
     margin-left: 10%;
     margin-right: 10%;
 }
+
+/*----------Quiz----------*/
 
 .quiz-body {
     margin-left: 10%;
     margin-right: 10%;
 }
 
+.question {
+    background-color: #F4F7F9;
+    border-radius: 25px;
+}
 
 /*----------Button----------*/
 .answer {
