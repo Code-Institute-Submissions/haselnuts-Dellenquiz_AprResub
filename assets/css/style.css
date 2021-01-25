@@ -1,12 +1,17 @@
 @import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro:ital,wght@0,200;0,300;0,400;0,600;1,200;1,300;1,400;1,600&family=Tangerine:wght@400;700&display=swap');
 
+*, ::before, ::after {
+    box-sizing: border-box;
+    font-family: "Source Sans Pro", sans-serif;
+    font-weight: 400;
+}
+
 
 /*----------General----------*/
 body {
-    font-family: "Source Sans Pro", sans-serif;
-    font-weight: 400;
     color: #000000;
     margin: 0;
+    padding: 0;
     text-align: center;
 }
 
@@ -44,7 +49,7 @@ h2 {
     height: 700px;
 }
 
-.quiz-background-img {
+.quiz-img {
     background: url("../images/dellenquiz-background.jpg") no-repeat;
     background-size: cover;
     background-position: center;
@@ -62,25 +67,72 @@ h2 {
 
 /*----------Quiz----------*/
 
-.quiz-body {
+.container {
     margin-left: 10%;
     margin-right: 10%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.quiz-container {
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
 }
 
 .question {
     background-color: #F4F7F9;
-    border-radius: 25px;
+    border-radius: 15px;
+    padding: 5px 10px;
 }
 
 /*----------Button----------*/
-.answer {
+
+.btn-grid {
+    display: grid;
+    grid-template-columns: repeat(2, auto);
+    gap: 10px;
+    margin: 20px 0 ;
+}
+.btn {
     background-color: #F4F7F9;
-    border-radius: 25px;
+    border-radius: 15px;
+    padding: 5px 10px;
 }
 
-.submit {
+.controls {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.controls-btn {
+    border-radius: 15px;
+    border-style: none;
+    font-weight: 600;
+    padding: 5px 10px;
+    font-size: 1.5rem;
+}
+
+.start-btn {
+    background-color: #3E885B;
+    color: #FFFFFF;
+}
+
+.next-btn,
+.previous-btn {
+    background-color: #CCC7B9;
+}
+
+.submit-btn {
     background-color: #EB9B9D;
     color: #FFFFFF;
-    font-weight: 600;
-    border-radius: 25px;
+}
+
+.hide {
+    display: none;
 }
