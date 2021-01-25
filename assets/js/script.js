@@ -3,7 +3,7 @@
 const startButton = document.getElementById("start-btn");
 const quizContainerElement = document.getElementById("quiz-container");
 const questionElement = document.getElementById("question");
-const answerElement = docuemnt.getElementById("answer-buttons");
+const answerButtonsElement = document.getElementById("answer-buttons");
 const nextButton = document.getElementById("next-btn");
 const previousButton = document.getElementById("previous-btn");
 const submitButton = document.getElementById("submit-btn")
@@ -16,34 +16,57 @@ previousButton.addEventListener("click", previousQuestion)
 submitButton.addEventListener("click", submitQuiz);
 
 
+
 //FUNCTIONS
 function startGame() {
     //When start button pressed the start button will hide
     startButton.classList.add("hide");
+
     //After the start button is pressed, it will hide and the quiz container will show up
     quizContainerElement.classList.remove("hide");
+
+    //Retrieves a question from the quiz questions array
+    currentQuestion = quizQuestions;
+
     //Quiz starts with the first question in the quizQuestion array
-    currentQuestion = 0;
-    setNextQuestion
+    currentQuestionIndex = 0;
+    currentAnswerIndex = 0;
+
+    //Reference to the funtion setNextQuestion that shows the question
+    setNextQuestion();
 };
 
+//
+function setNextQuestion() {
+    showQuestions(currentQuestion[currentQuestionIndex])
+  };
+
+// Shows the question in the html
 function showQuestions(question) {
     questionElement.innerHTML = question.question;
-}
+    //loop thru the answers
+    question.answers.forEach(answer => {
+        //creating a button
+        const button = document.createElement("button")
+        //adding answers into the button
+        button.innerText = answer.answers
+        button.classList.add("btn")
 
-showQuestions(currentQuestion)
+        answerButtonsElement.appendChild(button)
+    })
+}
 
 function selectAnswer() {
     
 };
 
-function nextQuestion() {
-
-};
-
 function previousQuestion() {
 
 };
+
+function nextQuestion() {
+
+}
 
 function submitQuiz() {
 
@@ -52,23 +75,23 @@ function submitQuiz() {
 //ALL QUESTIONS AND ANSWERS GO HERE
 const quizQuestions = [
     {   question: "How was the Dellendistrict created?",
-        answ: ["Meteor", "Volcano", "Big Bang", "Earthquake"], 
+        answers: ["Meteor", "Volcano", "Big Bang", "Earthquake"], 
         correct: 0                   
     },
     {   question: "What is the stone called that only can be found in the Dellendistrict?",
-        answ: [ "Dellenit", "Dellenkilt", "Dellenstone", "Dellenquartz"],
+        answers: [ "Dellenit", "Dellenkilt", "Dellenstone", "Dellenquartz"],
         correct: 0
     },
     {   question: "When were the Dellenlakes formed?",
-        answ: ["Stone Age", "Bronce Age", "Ice Age", "Iron Age"],
+        answers: ["Stone Age", "Bronce Age", "Ice Age", "Iron Age"],
         correct: 2
     },
     {   question: "Which is the biggest place in the Dellendistrict?",
-        answ: ["Bjuråker", "Norrbo", "Delsbo", "Moviken"],
+        answers: ["Bjuråker", "Norrbo", "Delsbo", "Moviken"],
         correct: 2
     },
     {   question: "Which place is not lying at the Dellenlakes?",
-        answ: ["Delsbo", "Moviken", "Friggesund", "Eckelsbo"],
+        answers: ["Delsbo", "Moviken", "Friggesund", "Eckelsbo"],
         correct: 3
     }
 ];
