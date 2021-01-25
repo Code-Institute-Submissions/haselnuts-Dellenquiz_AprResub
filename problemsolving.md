@@ -1,7 +1,9 @@
 # Problemsolving
-  Here will all problems, issues and errors listed that come up during the process.
+*Here will all problems, issues and errors listed that come up during the process.*
 
 ## Console log error
+*All errors from the console will be listed here
+
 ### script.js:35 Uncaught TypeError: Cannot read property 'addEventListener' of null     at script.js:35
     - previousButton.addEventListener("click", previousQuestion)
       - no problem found with above Event addEventListener
@@ -14,3 +16,9 @@
       - found that quiz-container was not an ID attribute in index.html, changed quiz-container form class to ID
 
 ### 
+
+## Scrip problems
+*All problems within sript.js file will be listed here*
+
+### Answer buttons do not show answers
+
