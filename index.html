@@ -5,45 +5,67 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Dellenquiz</title>
         <link rel="stylesheet" href="assets/css/style.css" type="text/css">
+        <script defer src="assets/js/script.js"></script>
     </head>
 
     <body>
-    <!--Hero Image and Title-->
+    <!--HERO IMAGE AND TITLE-->
         <header>
             <div
                 class="container-fluid hero-image">
                 <h1>Dellenquiz</h1>
             </div>
         </header>
-    <!--/Hero Image and Title-->
+        
+        <!--QUIZ RULES AND QUIZ-->
+        <main>
+             <!--ABOUT THE QUIZ AND RULES-->
+            <section>
+                <div class="howtoplay">
+                    <h2>How to play</h2>
+                    <p>Rules</p>
+                </div>
+            </section>
 
-    <!--Quiz Rules-->
-        <div class="howtoplay">
-            <h2>How to play</h2>
-            <p>Rules</p>
-        </div>
-    <!--/Quiz Rules-->
+        <!--Quiz-->
+            <section>
+                <div class="container quiz-img">
+                     <!-- <h2>The Quiz</h2> -->
+                    <div class="quiz-container hide">                       
 
-    <!--Quiz-->
-        <div class="quiz-background-img quiz-body">
-            <h2>A Quiz for In- and Around the Dellendistrict</h2>
-            <div id=quiz>
-                <!--Questions go here-->
-            </div>  
-        </div>
-    <!--/Quiz-->
+                        <!--QUESTION AND ANSWERS-->
+                        <div id="question" class="question">Question</div>
+                        <div id="anser-button" class="btn-grid">
+                            <button class="btn">Answer 1</button>
+                            <button class="btn">Answer 2</button>
+                            <button class="btn">Answer 3</button>
+                            <button class="btn">Answer 4</button>
+                        </div>
+                    </div> 
 
-    <!--Disclaimer-->
-        <div>
-            <p>In case wrong answer whom to contact</p>
-        </div>
-    <!--/Disclaimer-->
+                    <!--CONTROL BUTTONS-->
+                    <div class="controls">
+                        <button id="start-btn" class="controls-btn start-btn">Start</button>
+                        <button id="next-btn" class="controls-btn next-btn hide">Next</button>
+                        <button id="prenious-btn" class="controls-btn previous-btn hide">Previous</button>
+                        <button id="submit-btn" class="controls-btn submit-btn hide">Submit</button>
+                    </div>
+                </div>
+            </section>
+        </main> 
 
-    <!--Footer-->
-        <div>
-            <p>Contact information</p>
-        </div>
-    <!--/Footer-->
-        <script src="assets/js/script.js"></script>
+        <!--DISCLAIMER-->
+        <section>
+            <div>
+                <p>In case wrong answer whom to contact</p>
+            </div>
+        </section>
+
+        <!--FOOTER-->
+        <footer>
+            <div>
+                <p>Contact information</p>
+            </div>
+        </footer>
     </body>
 </html>
