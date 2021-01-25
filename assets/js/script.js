@@ -1,9 +1,4 @@
-// Variables
-
-const submitBtn = document.getElementById("submit");
-const resultsContainer = document.getElementById("results");
-
-//All questions and answers go here
+//ALL QUESTIONS AND ANSWERS GO HERE
 const quizQuestions = [
     {   question: "How was the Dellendistrict created?",
         answ: ["Meteor", "Volcano", "Big Bang", "Earthquake"], 
@@ -27,34 +22,35 @@ const quizQuestions = [
     }
 ];
 
-//Build the Quiz
-function buildQuiz() {
-    const quizContainer = document.getElementById("quiz");
+//VARIABLES
+const startButton = document.getElementById("start-btn");
+const nextButton = document.getElementById("next-btn");
+const previousButton = document.getElementById("previous-btn");
+const submitButton = document.getElementById("submit-btn");
 
-    //for each question
-    let quizStr = "";
+//EVENTLISTENER
+startButton.addEventListener("click", startGame);
+nextButton.addEventListener("click", nextQuestion);
+previousButton.addEventListener("click", previousQuestion);
+submitButton.addEventListener("click", submitQuiz);
 
-    quizQuestions.forEach( function (currentQuestion) {
+//FUNCTIONS
+function startGame() {
+    console.log("started");
+};
 
-        let answerStr ="";
-        currentQuestion.answ.forEach( function(answer){
-            answerStr +=
-            `<label>
-                <input type="button" name="" value="${answer}" class="answer">
-            </label>`
-        });
-
-        quizStr +=
-        `<div>
-            <h3 class="question">${currentQuestion.question}</h3>
-            ${answerStr}            
-        </div>`
-    });
-
-    quizContainer.innerHTML = quizStr;
+function selectAnswer() {
 
 };
 
+function nextQuestion() {
 
-    buildQuiz();
+};
 
+function previousQuestion() {
+
+};
+
+function submitQuiz() {
+
+};
