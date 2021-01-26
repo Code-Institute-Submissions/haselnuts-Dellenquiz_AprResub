@@ -20,5 +20,15 @@
 ## Scrip problems
 *All problems within sript.js file will be listed here*
 
-### Answer buttons do not show answers
+### Answer buttons do not show answer text
+  - think the issue is that the answers should be a string
+    - tried to change the array into a string with .toString but issue remains
+    - changed the array manual into a string from "answers: ["Meteor", "Volcano", "Big Bang", "Earthquake"], correct: 0 
+      to  answers: [
+                {text: "Dellennit", correct: true},
+                {text: "Dellenkilt", correct: false},
+                {text: "Dellenstone", correct: false},
+                {text: "Dellenquartz", correct: false} ]
+
+
 
