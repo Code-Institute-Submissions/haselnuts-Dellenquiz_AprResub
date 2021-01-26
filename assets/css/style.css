@@ -102,6 +102,7 @@ h2 {
     background-color: #F4F7F9;
     border-radius: 15px;
     padding: 5px 10px;
+    border-style: none;
 }
 
 .controls {
