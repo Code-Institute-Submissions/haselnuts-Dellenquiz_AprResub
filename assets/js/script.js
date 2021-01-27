@@ -3,7 +3,6 @@
 const startButton = document.getElementById("start-btn");
 const quizContainerElement = document.getElementById("quiz-container");
 const questionElement = document.getElementById("question");
-const answerButtonsElement = document.getElementById("answer-buttons");
 const nextButton = document.getElementById("next-btn");
 const previousButton = document.getElementById("previous-btn");
 const submitButton = document.getElementById("submit-btn")
@@ -47,17 +46,17 @@ function showQuestions(question) {
     
     //loop thru the answers
     question.answers.forEach(answer => {
-        //creating a button
-        const button = document.createElement("button")
-        //adding answers into the buttons
-        button.innerText = answer.text
-        button.classList.add("btn")
-
-        //adding buttons to the html
-        answerButtonsElement.appendChild(button)
+        document.getElementById("answer-buttons").innerHTML += `
+        <label>
+            <input class="btn" type="button" name="question-answer" value="${answer}">
+        </label>
+        `
     })
 }
 
+function nextQuestion() {
+
+}
 function selectAnswer() {
     
 };
@@ -65,10 +64,6 @@ function selectAnswer() {
 function previousQuestion() {
 
 };
-
-function nextQuestion() {
-
-}
 
 function submitQuiz() {
 
@@ -78,43 +73,27 @@ function submitQuiz() {
 const quizQuestions = [
 
     {question: "How was the Dellendistrict created?",
-        answers: [
-            {text: "Meteor", correct: true},
-            {text: "Volcano", correct: false},
-            {text: "Big Bang", correct: false},
-            {text: "Earthquake", correct: false}                 
-        ]
+        answers: ["Meteor", "Volcano", "Big Bang", "Earthquake"],               
+        correct: 0
     },
+
     {question: "What is the stone called that only can be found in the Dellendistrict?",
-        answers: [
-                {text: "Dellennit", correct: true},
-                {text: "Dellenkilt", correct: false},
-                {text: "Dellenstone", correct: false},
-                {text: "Dellenquartz", correct: false}                 
-        ]
+        answers: ["Dellennit", "Dellenkilt", "Dellenstone", "Dellenquartz"],               
+        correct: 0
     },
+
     {question: "When were the Dellenlakes formed?",
-        answers: [
-            {text: "Stone Age", correct: false},
-            {text: "Bronce Age", correct: false},
-            {text: "Ice Age", correct: true},
-            {text: "Iron Age", correct: false}                 
-        ]
+        answers: ["Stone Age", "Bronce Age", "Ice Age", "Iron Age"],               
+        correct: 2
     },
+
     {question: "Which is the biggest place in the Dellendistrict?",
-         answers: [
-                {text: "Bjuråker", correct: false},
-                {text: "Norrbo", correct: false},
-                {text: "Delsbo", correct: true},
-                {text: "Moviken", correct: false}                 
-        ]
+        answers: ["Bjuråker", "Norbo", "Delsbo", "Moviken"],               
+        correct: 2
     },
+
     {question: "Which place is not lying at the Dellenlakes?",
-        answers: [
-            {text: "Delsbo", correct: false},
-            {text: "Moviken", correct: false},
-            {text: "Friggesund", correct: false},
-            {text: "Eckelsbo", correct: true}                 
-        ]
+    answers: ["Delsbo", "Moviken", "Friggesund", "Eckelsbo"],               
+        correct: 3
     }
 ];
