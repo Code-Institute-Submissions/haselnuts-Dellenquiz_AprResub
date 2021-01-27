@@ -54,6 +54,9 @@ The page features a **hero image** with view of one of the Dellen lakes, a descr
 
 **Call to Action Button** - for submitting the questions and restart or end the quiz
 
+## Changes made
+**Buttons** 3 addtional buttons were added *Start, Previous* and *Next*
+**Modals** All modals were removed
 
 ### Features to Implement in future
 **Radio buttons** - to seperate amount of questions and choose the levels
@@ -84,11 +87,11 @@ The page features a **hero image** with view of one of the Dellen lakes, a descr
 
 ## Problem solving
 - Problem solving information can be found in seperate 
-**[problemsolving.md file](https://github.com/haselnuts/Hofra-Bed-Breakfast/blob/master/problemsolving.md)**.
+**[problemsolving.md file](https://github.com/haselnuts/Dellenquiz/blob/main/problemsolving.md)**.
 
 ## Testing
 - Testing information can be found in seperate 
-**[testing.md file](https://github.com/haselnuts/Hofra-Bed-Breakfast/blob/master/testing.md)**.
+**[testing.md file](https://github.com/haselnuts/Dellenquiz/blob/master/testing.md)**.
 
 ## Deployment
   1. Log into GitHub.
@@ -102,18 +105,20 @@ The page features a **hero image** with view of one of the Dellen lakes, a descr
 
 ## Credits
 #### Content
-Answers of .....  
+ 
 
 #### Media
+ - All images were provided by the developer of this website
 
 
 ### Acknowledgements
- - Aaron Sinnot (Slack name: aaron_mentor) for giving me the JS structure for the questions
  - Mitchell Hudson YouTube videos on how to built a quiz step by step
    - [JS Quiz Getting Started Objects](https://www.youtube.com/watch?v=5gMeokwPtYM&t=122s)
    - [JS Quiz ForEach](https://www.youtube.com/watch?v=7wHSwvM1Rr8)
  - CodePen
-   - [JavaScriptCreateButton](https://codepen.io/davidcochran/pen/WbWXoa)
+   - 
+ - w3schools
+   - [answer buttons forEach loop](https://www.w3schools.com/jsref/jsref_foreach.asp)
 
 
 
