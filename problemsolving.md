@@ -29,6 +29,6 @@
                 {text: "Dellenkilt", correct: false},
                 {text: "Dellenstone", correct: false},
                 {text: "Dellenquartz", correct: false} ]
-
+    - changed back to previous aray, as I changed the forEach loop for the answers
 
 
