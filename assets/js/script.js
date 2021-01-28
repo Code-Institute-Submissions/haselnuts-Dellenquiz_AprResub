@@ -48,17 +48,20 @@ function showQuestions(question) {
     question.answers.forEach(answer => {
         document.getElementById("answer-buttons").innerHTML += `
         <label>
-            <input class="btn" type="button" name="question-answer" value="${answer}">
+            <input class="btn" on-click="showNextPreviousButtons()" type="button" name="question-answer" value="${answer}">
         </label>
         `
-    })
-}
+        });
+};
 
 function nextQuestion() {
 
 }
-function selectAnswer() {
-    
+// If one of the answer buttons is clicked buttons Next and Previous shall appear
+function showNextPreviousButtons() {
+    let element = document.getElementsByClassName("btn");
+        element.nextButton.classList.remove("hide");
+        element.previousButton.classList.remove("hide");   
 };
 
 function previousQuestion() {
