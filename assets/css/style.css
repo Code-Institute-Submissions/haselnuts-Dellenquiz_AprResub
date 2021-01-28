@@ -43,8 +43,6 @@ h2 {
     background: url("../images/dellenquiz-hero-image.jpg") no-repeat;
     background-size: cover;
     background-position: center;
-    display: flex;
-    flex-direction: row;
     padding: 0;
     height: 700px;
 }
@@ -86,8 +84,10 @@ h2 {
 
 .question {
     background-color: #F4F7F9;
-    border-radius: 15px;
-    padding: 5px 10px;
+    border-radius: 30px;
+    padding: 5px 20px;
+    font-size: 1.5rem;
+    opacity: 0.8;
 }
 
 /*----------Button----------*/
@@ -96,13 +96,15 @@ h2 {
     display: grid;
     grid-template-columns: repeat(2, auto);
     gap: 10px;
-    margin: 20px 0 ;
+    margin: 30px 0 ;
 }
 .btn {
     background-color: #F4F7F9;
-    border-radius: 15px;
-    padding: 5px 10px;
+    border-radius: 30px;
+    padding: 5px 20px;
     border-style: none;
+    font-size: 1.5rem;
+    opacity: 0.8;
 }
 
 .controls {
@@ -116,22 +118,26 @@ h2 {
     border-style: none;
     font-weight: 600;
     padding: 5px 10px;
-    font-size: 1.5rem;
 }
 
 .start-btn {
     background-color: #3E885B;
-    color: #FFFFFF;
+    color: #000000;
+    font-size: 3rem;
+    opacity: 0.8;
+    text-transform: uppercase;
 }
 
 .next-btn,
 .previous-btn {
     background-color: #CCC7B9;
+    text-transform: uppercase;
 }
 
 .submit-btn {
     background-color: #EB9B9D;
     color: #FFFFFF;
+    text-transform: uppercase;
 }
 
 .hide {
