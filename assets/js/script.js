@@ -3,15 +3,12 @@
 const startButton = document.getElementById("start-btn");
 const quizContainerElement = document.getElementById("quiz-container");
 const questionElement = document.getElementById("question");
-const nextButton = document.getElementById("next-btn");
-const previousButton = document.getElementById("previous-btn");
-const submitButton = document.getElementById("submit-btn")
+const submitButton = document.getElementById("submit-btn");
+
 
 //EVENTLISTENER
 //Connects the EventListener with the functions
 startButton.addEventListener("click", startGame);
-nextButton.addEventListener("click", nextQuestion);
-previousButton.addEventListener("click", previousQuestion)
 submitButton.addEventListener("click", submitQuiz);
 
 
@@ -38,6 +35,7 @@ function startGame() {
 //
 function setNextQuestion() {
     showQuestions(currentQuestion[currentQuestionIndex])
+
   };
 
 // Shows the question in the html
@@ -46,31 +44,33 @@ function showQuestions(question) {
     
     //loop thru the answers
     question.answers.forEach(answer => {
-        document.getElementById("answer-buttons").innerHTML += `
-        <label>
+        document.getElementById("answer-buttons").innerHTML += 
+        `<label>
             <input class="btn" on-click="showNextPreviousButtons()" type="button" name="question-answer" value="${answer}">
-        </label>
-        `
+        </label>`
         });
 };
 
+//Submits the question and moves on to next question
 function nextQuestion() {
 
 }
-// If one of the answer buttons is clicked buttons Next and Previous shall appear
-function showNextPreviousButtons() {
-    let element = document.getElementsByClassName("btn");
-        element.nextButton.classList.remove("hide");
-        element.previousButton.classList.remove("hide");   
-};
 
-function previousQuestion() {
-
-};
-
+// Submit quiz
 function submitQuiz() {
 
 };
+
+//Show results, how many correct of total
+function showResults() {
+
+};
+
+// Quiz will be start again
+function restartQuiz() {
+
+};
+ 
 
 //ALL QUESTIONS AND ANSWERS GO HERE
 const quizQuestions = [
