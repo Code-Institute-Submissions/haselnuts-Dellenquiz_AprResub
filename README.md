@@ -10,8 +10,8 @@
 ## Introduction
 This quiz shall promote the Dellendistrict with its beautiful surrounding, attractions, inhabitants and companies, mostely for the tourism.
 This quiz shall also show my skills of JavaScript which unfortunately have not evolved as expected. Before you even start I can tell you that there
-is only a limited scrip availalble. I haven't given up on this website but it will take a bit more time to learn the skills of JavaScript and to finish
-this project. 
+is only a limited script availalble. Most of the JavaScript provided  was written together with youtube videos as provided in Acknowledgements. I haven't 
+given up on this website but it will take a bit more time to learn the skills of JavaScript and to finish this project. 
 No testing performed as the script that was provided is not enough to test the functions of the quiz.
 
 ## The Goals
