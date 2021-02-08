@@ -11,7 +11,8 @@
 This quiz shall promote the Dellendistrict with its beautiful surrounding, attractions, inhabitants and companies, mostely for the tourism.
 This quiz shall also show my skills of JavaScript which unfortunately have not evolved as expected. Before you even start I can tell you that there
 is only a limited scrip availalble. I haven't given up on this website but it will take a bit more time to learn the skills of JavaScript and to finish
-this project.
+this project. 
+No testing performed as the script that was provided is not enough to test the functions of the quiz.
 
 ## The Goals
 
@@ -95,8 +96,8 @@ Results will be shown after the quiz is committed.
   1. Log into GitHub.
   2. From the list of repositories select **haselnuts/Dellenquiz**
   3. From the menu items below the navigation bar, select **Settings**
-  4. Scoll down to **GitHub pages**
-  5. Under **Source** click the dropdown menu labelled **None** and select **Master**
+  4. Scroll down to **GitHub pages**
+  5. Under **Source** click the dropdown menu labeled **None** and select **Master**
   6. Select **Save** 
   7. Reload the page
   8. Follow the link after **Your site is published at**
@@ -104,17 +105,13 @@ Results will be shown after the quiz is committed.
 ## Credits
 #### Content
  
-
 #### Media
  - All images were provided by the developer of this website
-
 
 ### Acknowledgements
  - Mitchell Hudson YouTube videos on how to built a quiz step by step
    - [JS Quiz Getting Started Objects](https://www.youtube.com/watch?v=5gMeokwPtYM&t=122s)
    - [JS Quiz ForEach](https://www.youtube.com/watch?v=7wHSwvM1Rr8)
- - CodePen
-   - 
  - w3schools
    - [answer buttons forEach loop](https://www.w3schools.com/jsref/jsref_foreach.asp)
 
