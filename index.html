@@ -4,6 +4,7 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Dellenquiz</title>
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
         <link rel="stylesheet" href="assets/css/style.css" type="text/css">
         <script defer src="assets/js/script.js"></script>
     </head>
@@ -21,20 +22,23 @@
         <main>
              <!--ABOUT THE QUIZ AND RULES-->
             <section>
-                <div class="howtoplay">
+                <div id="howtoplay">
                     <h2>What's about and how to play</h2>
                     <!---->
-                    <div id="rules">
-                        <p>Dellenquiz is a promotion of the surroundings with its beautiful nature, events and inhabitants around the North and South Dellen and its closest neighbours. 
-                            You will find questions for interesting historical and geographical facts, places to visit, the inhabitants or just good to know information.
+                    <div>
+                        <p>Dellenquiz is a promotion of the surroundings with its beautiful nature, events and inhabitants around the North and South Dellen. The North and South Dellen 
+                            lie in the beautiful landscape <em>Hälsingland</em>.<br>
+                            The quiz will provide interesting historical and geographical facts, places to visit, information on important people or just good to know information.
                         </p>
                         <p>Test your knowledge and hopefully you will even find things you didn't know before.
                             With clicking on the Start button the first question with four (4) choices will be shown. If nothing else is mentioned then only one choice is correct. 
-                            You will not get any feedback until you answer the last question and hopefully all will be correct otherwise you can Restart the quiz and try as many times
+                            You will not get any feedback until you answered the last question and hopefully all will be correct otherwise you can Restart the quiz and try as many times
                             you want. 
                         </p>
-                        <p>
-                            So good luck!                            
+                        <p>In case you find the information any incorrect information then please contact me and my sincere apologies.<br>
+                          If you have a suggestion for a question incl. correct answer and founding evidence or an image you want to add to the question box then please contact me.</p>
+                        <p id="goodluck">
+                        Good luck!                            
                         </p>
                     </div>
                 </div>
@@ -42,7 +46,7 @@
 
         <!--Quiz-->
             <section>
-                <div class="container quiz-img">
+                <div class="box quiz-img">
                      <!-- <h2>The Quiz</h2> -->
                     <div id="quiz-container" class= "hide">                    
                         <!--QUESTION AND ANSWERS-->
@@ -60,17 +64,12 @@
             </section>
         </main> 
 
-        <!--DISCLAIMER-->
-        <section>
-            <div>
-                <p>In case wrong answer whom to contact</p>
-            </div>
-        </section>
-
         <!--FOOTER-->
         <footer>
             <div>
-                <p>Contact information</p>
+                <h3>Dellenquiz</h3>
+                <p>Email address <br>
+                dellenquiz@hotmail.com</p>
             </div>
         </footer>
     </body>
