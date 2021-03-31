@@ -4,6 +4,7 @@ const startButton = document.getElementById("start-btn");
 const quizContainerElement = document.getElementById("quiz-container");
 const questionElement = document.getElementById("question");
 const submitButton = document.getElementById("submit-btn");
+const submitQuizButton = document.getElementById("submitQuiz-btn");
 
 
 //EVENTLISTENER
@@ -42,14 +43,27 @@ function setNextQuestion() {
 function showQuestions(question) {
     questionElement.innerHTML = question.question;
     
-    //loop thru the answers
+    //loop thru the answers and creates a button for each answer
     question.answers.forEach(answer => {
         document.getElementById("answer-buttons").innerHTML += 
         `<label>
-            <input class="btn" on-click="showNextPreviousButtons()" type="button" name="question-answer" value="${answer}">
+            <input class="btn answer-btn" type="submit" name="question-answer" value="${answer}">
         </label>`
         });
+
+        // Shows submit button
+        $(document).ready(function() {
+
+            $(".answer-btn").on("click", function(){
+                !$(this).toggleClass("answer-btn-active");
+            });
+
+            $(".answer-btn").on("click", function(){
+                $("#submit-btn").removeClass("hide");
+            });    
+        })
 };
+
 
 //Submits the question and moves on to next question
 function nextQuestion() {
@@ -100,3 +114,5 @@ const quizQuestions = [
         correct: 3
     }
 ];
+
+
