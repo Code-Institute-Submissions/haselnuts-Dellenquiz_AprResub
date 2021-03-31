@@ -6,7 +6,8 @@
         <title>Dellenquiz</title>
         <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
         <link rel="stylesheet" href="assets/css/style.css" type="text/css">
-        <script defer src="assets/js/script.js"></script>
+        <script defer src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+        <script defer type="text/javascript"src="assets/js/script.js"></script>
     </head>
 
     <body>
@@ -35,8 +36,8 @@
                             You will not get any feedback until you answered the last question and hopefully all will be correct otherwise you can Restart the quiz and try as many times
                             you want. 
                         </p>
-                        <p>In case you find the information any incorrect information then please contact me and my sincere apologies.<br>
-                          If you have a suggestion for a question incl. correct answer and founding evidence or an image you want to add to the question box then please contact me.</p>
+                        <p>In case you find any incorrect information then please contact me and my sincere apologies.<br>
+                          If you have a suggestion for a question incl. correct answer, please provide founding evidence, and even an image you want to add to the question box then please contact me.</p>
                         <p id="goodluck">
                         Good luck!                            
                         </p>
@@ -46,19 +47,19 @@
 
         <!--Quiz-->
             <section>
-                <div class="box quiz-img">
+                <div class="container quiz-img">
                      <!-- <h2>The Quiz</h2> -->
-                    <div id="quiz-container" class= "hide">                    
+                    <div id="quiz-container" class="hide">                    
                         <!--QUESTION AND ANSWERS-->
                         <div id="question" class="question">Question</div>
-                        <div id="answer-buttons" class="btn-grid">
-                        </div>
+                        <div id="answer-buttons" class="btn-grid"></div>
                     </div> 
 
                     <!--CONTROL BUTTONS-->
                     <div class="controls">
-                        <button id="start-btn" class="controls-btn start-btn">Start</button>
-                        <button id="submit-btn" class="controls-btn submit-btn hide">Submit</button>
+                        <button id="start-btn" class="controls-btn start-btn" type="button">Start</button>
+                        <button id="submit-btn" class="controls-btn submit-btn hide" type="submit">Submit</button>
+                        <button id="submitQuiz-btn" class="controls-btn submit-btn hide" type="submit">Submit Quiz</button>
                     </div>
                 </div>
             </section>
