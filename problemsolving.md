@@ -1,5 +1,5 @@
 # Problemsolving
-*Here will all problems, issues and errors listed that come up during the process.*
+*All problems, issues and errors will be listed here which come up during the developement of this website.*
 
 ## Console log error
 *All errors from the console will be listed here
@@ -17,7 +17,7 @@
 
 ### 
 
-## Scrip problems
+## Script problems
 *All problems within sript.js file will be listed here*
 
 ### Answer buttons do not show answer text
@@ -30,5 +30,57 @@
                 {text: "Dellenstone", correct: false},
                 {text: "Dellenquartz", correct: false} ]
     - changed back to previous aray, as I changed the forEach loop for the answers
+
+
+## jQuery
+*All jQuery issues will be listed here*
+
+## When answer button is clicked the submit button should be appear but it does not
+
+  - The following code is only to test if it works. The code is working in the console but not from the jquery.js file 
+    $(document).ready(function() {
+       $("#answer-btn").click(function() {
+        $(this).css("background-color", "blue");
+       });    
+    })
+
+  - changed the code to and moved it to script.js into function showQuestions()
+    $(document).ready(function() {
+
+        $(".answer-btn").on("click", function(){
+            $("#submit-btn").removeClass("hide");
+        });    
+    })
+  - Submit button appears when answer button is clicked
+
+## All answer buttons change background color when clicked, only one at a time shall change background color
+  - Code: 
+        $(".answer-btn").on("click", function(){
+            !$(this).toggleClass("answer-btn-active");
+        });
+
+# CSS 
+*All CSS issues will be listed here*
+
+## Submit button places side by side with the answers
+  - code before
+    .container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 800px;
+        max-width: 80%;
+        }
+  - Code after: added flex-direction: column to change direction
+    Credit to: https://stackoverflow.com/questions/49393175/move-buttons-below-text/49393260
+    .container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        width: 800px;
+        max-width: 80%;
+    }
+
 
 
